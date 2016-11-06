@@ -28,6 +28,20 @@ func main() {
 	}
 
 	// Switch statement takes conditionals and auto breaks
+	// it compares each case against the expression provided
+	// e.g. num == 1
+	switch num {
+	case 1:
+		fmt.Println("One")
+	case 2:
+		fmt.Println("Two")
+	default:
+		fmt.Println("Way too many")
+	}
+
+	// If the expression is omitted, go assumes it as `true`
+	// i.e. it compares each case against  `true`
+	// e.g. true == (num == 1)
 	switch {
 	case num == 1:
 		fmt.Println("One")
